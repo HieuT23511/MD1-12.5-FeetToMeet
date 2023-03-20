@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap: Chuyen doi Feet - Meters</title>
+</head>
+<body>
+<script>
+    function footToMeter(feet) {
+        return 0.305 * feet;
+    }
+
+    function meterToFoot(meter) {
+        return 3.279 * meter;
+    }
+
+    let unit = prompt('Select Unit: meter || feet?')
+    if (unit === 'meter') {
+        meter = +prompt('Enter Meter: ');
+        meterToFoot(meter);
+        alert(`${meter} meter = ${meterToFoot(meter)} feet`)
+    } else if (unit === 'feet') {
+        feet  = +prompt('Enter feet: ');
+        footToMeter(feet);
+        alert(`${feet} feet = ${footToMeter (feet)} meter`)
+    }
+</script>
+</body>
+</html>
